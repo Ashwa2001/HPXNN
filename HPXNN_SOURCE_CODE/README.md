@@ -44,12 +44,12 @@ This directory has major sub-folders on which HPX was tested.
     <li><b>hpx_pytorch_convertor.cpp</b>: This is the converter tool responsible for converting C++ PyTorch programs to HPX C++ PyTorch Programs.  
     <li><b>OpenNN Library</b>: OpenNN stands for Open Neural Networks. It is a software library written in the C++ programming language. It implements a major area of machine learning, neural networks. Written in C++ for advanced analytics, OpenNN’s main advantage is its high performance. 
 </ol>
-This library implements the HPX backend to the above listed files. Files like Tensor Functions, Optimization, Autograd, MNIST, CNN-Resnet 50, Linear Regression, Logistics Regression, 2-Layer Neural Network, Feed Forward Neural Network are common machine learning algorithms which were used for testing HPX's performance on PyTorch Programs. Changes like asynchronous function calls using async() and futures were used and standard for-loops are converted to HPX for-loops.<br>
+This library implements the HPX backend on the above listed files. Files like Tensor Functions, Optimization, Autograd, MNIST, CNN-Resnet 50, Linear Regression, Logistics Regression, 2-Layer Neural Network, Feed Forward Neural Network are common machine learning algorithms which were used for testing HPX's performance on PyTorch Programs. Changes like asynchronous function calls using async() and futures were used and standard for-loops were converted to HPX for-loops.<br>
 HPX_CONVERTER.cpp is a converter tool responsible for converting C++ PyTorch programs into HPX implemented C++ PyTorch programs. <br>
 The OpenNN Library contains the OpenNN repository with HPX backend implemented. The testing has been done on example files like breast_cancer, airfoil_self_noise, airline_passengers, iris_plant, logical_operations, simple_function_regression. Moreover, changes have been made to opennn module files like adaptive_moment_estimation.cpp, data_set.cpp and neural_network.cpp,etc. 
 
-> Each of these files contain the absolute path to either HPX library or PyTorch Library. These paths must be changed accordingingly on each system.<br>
-> These paths have mostly been mentioned in the CMakeLists.txt file with each folder. Some of files also contain absolute path to their datasets.<br> <i><b>Please make the necessary changes.</b></i>
+> Each of these files contain the absolute path to either the HPX library or the PyTorch Library. These paths must be changed accordingingly on each system.<br>
+> These paths have mostly been mentioned in the CMakeLists.txt file with each folder. Some files also contain the absolute path to their datasets.<br> <i><b>Please make the necessary changes.</b></i>
 
 ## Execution of the Files
 
@@ -65,7 +65,7 @@ Each file has a different executable name such as
 autograd is ./autograd
 <br>
 These names can be checked in their respective CMakeLists.txt
-To run the executable name enter the build directory.
+To run the executable, enter the build directory.
 ```
 $ ./[EXECUTABLE_NAME]
 ```
