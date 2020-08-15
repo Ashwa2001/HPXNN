@@ -15,7 +15,7 @@ This project was a done in association with "Center of Advanced Parallel Systems
 
 ## Contents of the Directory
 
-This directory is has major sub-folders on which the results were based. 
+This directory has major sub-folders on which HPX was tested. 
 <ol>
     <li>Tensor Functions</li>
     <li>Optimization</li>
